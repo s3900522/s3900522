@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    s3900522 DMS 1 Assignment 2
+</title>
+<style>
+            .row{
+                width:720px;
+                margin: 1px auto 1px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:10px;
+            }
+</style>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+</head>
+<body>
+    <body style="background-color:rgb(119, 151, 195)"
+    <div class="row">
+        <div class="image-container"><img id="icon_1" src="img/icon_1.png" height="200" width="200"></div>
+        <div class="image-container"><img id="icon_2" src="img/icon_2.png" height="200" width="200"></div>
+        <div class="image-container"><img id="icon_3" src="img/icon_3.png" height="200" width="200"></div>
+    </div>
+    <div class="row">
+        <div class="image-container"><img id="icon_4" src="img/icon_4.png" height="200" width="200"></div>
+        <div class="image-container"><img id="icon_5" src="img/icon_5.png" height="200" width="200"></div>
+        <div class="image-container"><img id="icon_6" src="img/icon_6.png" height="200" width="200"></div>
+    </div>
+    <div class="row">
+        <div class="image-container"><img id="icon_7" src="img/icon_7.png" height="200" width="200"></div>
+        <div class="image-container"><img id="icon_8" src="img/icon_8.png" height="200" width="200"></div>
+        <div class="image-container"><img id="icon_9" src="img/icon_9.png" height="200" width="200"></div>
+    </div>
+
+    <script>
+        var sound1 = new buzz.sound("sound/waterdrop.mp3");
+        var sound2 = new buzz.sound("sound/gasstove.wav");
+        var sound3 = new buzz.sound("sound/drip2.wav");
+        var sound4 = new buzz.sound("sound/branch.wav");
+        var sound5 = new buzz.sound("sound/plate.wav");
+        var sound6 = new buzz.sound("sound/cough.wav");
+        var sound7 = new buzz.sound("sound/lightning.mp3");
+        var sound8 = new buzz.sound("sound/gull.wav");
+        var sound9 = new buzz.sound("sound/wind.mp3");
+ 
+        window.onload = function() {
+            document.getElementById('icon_1').addEventListener('click', function () {sound1.play(); });  
+            document.getElementById('icon_2').addEventListener('click', function () {sound2.play(); });
+            document.getElementById('icon_3').addEventListener('click', function () {sound3.play(); });
+            document.getElementById('icon_4').addEventListener('click', function () {sound4.play(); });
+            document.getElementById('icon_5').addEventListener('click', function () {sound5.play(); }); 
+            document.getElementById('icon_6').addEventListener('click', function () {sound6.play(); }); 
+            document.getElementById('icon_7').addEventListener('click', function () {sound7.play(); }); 
+            document.getElementById('icon_8').addEventListener('click', function () {sound8.play(); }); 
+            document.getElementById('icon_9').addEventListener('click', function () {sound9.play(); });
+        }  
+    </script>   
+</body>
+</html>
